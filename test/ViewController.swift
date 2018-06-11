@@ -11,34 +11,25 @@ import AVKit
 import AVFoundation
 
 class ViewController: UIViewController {
-    
-    var playerViewController = AVPlayerViewController()
-    var playerView = AVPlayer()
-    
     @IBOutlet weak var containerView: UIView!
-
+    
+    private var controller = AVPlayerViewController()
+    private var player = AVPlayer()
+    
     override func viewDidAppear(_ animated: Bool) {
         
         containerView.backgroundColor = UIColor.green
         
-        let fileURL = NSURL(fileURLWithPath: "/Users/q1431708/Desktop/dev/test/test/Short-test-video.mp4")
-
-        playerView = AVPlayer(url: fileURL as URL)
-        playerViewController.player = playerView
+        let url = URL(fileURLWithPath: "/Users/q1431708/Desktop/dev/test/test/media/Short-test-video.mp4")
+        //        let url = URL(fileURLWithPath: "http://qvclvp2.mmdlive.lldns.net/qvclvp2/9aa645c89c5447a8937537011e8f8d0d/manifest.m3u8")
+        let asset = AVAsset(url: url as URL)
+        let playerItem = AVPlayerItem(asset: asset)
+        player = AVPlayer(playerItem: playerItem)
+        controller.player = player
         
+        containerView.addSubview(controller.view)
+        controller.view.frame = containerView.bounds
         
-        //addChildViewController(playerViewController) // containerVC is now managing view of childVC
-        containerView.addSubview(playerViewController.view)
-        
-        playerViewController.view.frame = containerView.frame
-        playerViewController.view.bounds = containerView.bounds
-
-        //  fix bounds and frame of view
-        
-//        self.present(playerViewController, animated: true) {
-//            self.playerViewController.player?.play()
-//        }
-
     }
     
     override func viewDidLoad() {

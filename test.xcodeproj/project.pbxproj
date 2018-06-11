@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		62147FD420C6D949000642E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62147FD320C6D949000642E8 /* AppDelegate.swift */; };
 		62147FD620C6D949000642E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62147FD520C6D949000642E8 /* ViewController.swift */; };
-		62147FD920C6D949000642E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62147FD720C6D949000642E8 /* Main.storyboard */; };
+		62147FD920C6D949000642E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62147FD720C6D949000642E8 /* Main.storyboard */; settings = {ASSET_TAGS = (1000, ); }; };
 		62147FDB20C6D94A000642E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62147FDA20C6D94A000642E8 /* Assets.xcassets */; };
 		62147FDE20C6D94A000642E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62147FDC20C6D94A000642E8 /* LaunchScreen.storyboard */; };
-		62147FE720C6FB5B000642E8 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62147FE620C6FB5B000642E8 /* ContainerViewController.swift */; };
+		622D95EC20CAFB56002BEC1B /* media in Resources */ = {isa = PBXBuildFile; fileRef = 622D95EB20CAFB56002BEC1B /* media */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,8 +23,7 @@
 		62147FDA20C6D94A000642E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		62147FDD20C6D94A000642E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		62147FDF20C6D94B000642E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		62147FE520C6D969000642E8 /* Short-test-video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Short-test-video.mp4"; sourceTree = "<group>"; };
-		62147FE620C6FB5B000642E8 /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
+		622D95EB20CAFB56002BEC1B /* media */ = {isa = PBXFileReference; lastKnownFileType = folder; path = media; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,9 +59,8 @@
 				62147FD320C6D949000642E8 /* AppDelegate.swift */,
 				62147FD520C6D949000642E8 /* ViewController.swift */,
 				62147FD720C6D949000642E8 /* Main.storyboard */,
-				62147FE620C6FB5B000642E8 /* ContainerViewController.swift */,
 				62147FDA20C6D94A000642E8 /* Assets.xcassets */,
-				62147FE520C6D969000642E8 /* Short-test-video.mp4 */,
+				622D95EB20CAFB56002BEC1B /* media */,
 				62147FDC20C6D94A000642E8 /* LaunchScreen.storyboard */,
 				62147FDF20C6D94B000642E8 /* Info.plist */,
 			);
@@ -95,6 +93,9 @@
 		62147FC820C6D949000642E8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					1000,
+				);
 				LastSwiftUpdateCheck = 0940;
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Paul Choi";
@@ -128,6 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				62147FDE20C6D94A000642E8 /* LaunchScreen.storyboard in Resources */,
+				622D95EC20CAFB56002BEC1B /* media in Resources */,
 				62147FDB20C6D94A000642E8 /* Assets.xcassets in Resources */,
 				62147FD920C6D949000642E8 /* Main.storyboard in Resources */,
 			);
@@ -141,7 +143,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				62147FD620C6D949000642E8 /* ViewController.swift in Sources */,
-				62147FE720C6FB5B000642E8 /* ContainerViewController.swift in Sources */,
 				62147FD420C6D949000642E8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,12 +288,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 763Q28VJUV;
 				INFOPLIST_FILE = test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.test;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.paulvideotest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -304,12 +306,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 763Q28VJUV;
 				INFOPLIST_FILE = test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.test;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.paulvideotest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
